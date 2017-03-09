@@ -1,0 +1,13 @@
+﻿<script>
+    getTimeTickerRecommendedList();
+    getPopularRecommendedList();
+    getLatestRecommendedList();
+    getSuggestionRecommendedList();
+</script>
+
+<div class="wrapper-width-1100-px-home-list-course-5">
+   @Html.Partial("TimeTickerRecommended")
+   @Html.Partial("PopularRecommended")
+   @Html.Partial("LatestRecommended")
+   @Html.Partial("SuggestionRecommended")
+</div>

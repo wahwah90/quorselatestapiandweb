@@ -1,0 +1,32 @@
+﻿<script>
+    getTimeTickerRecommendedList();
+    getPopularRecommendedList();
+</script>
+<div class="alert alert-danger" data-bind="visible: model.gotError(), text: model.error()">
+</div>
+@*<div class="panel panel-primary">
+    <div class="panel-heading">Authentication</div>
+    <table class="table table-striped">
+        <tr><td>Authenticated:</td><td data-bind="text: model.authenticated()"></td></tr>
+        <tr><td>User:</td><td data-bind="text: model.username()"></td></tr>
+        <tr>
+            <td colspan="2">
+                <button data-bind="click: testAuth">
+                    Authenticate
+                </button>
+            </td>
+        </tr>
+    </table>
+</div>*@
+<div class="panel panel-primary">
+    <div class="panel-heading">Product Controller Functions</div>
+    <table class="table table-striped">
+        <tr>
+            <td><button data-bind="click: getTimeTickerRecommendedList()">Get Time Ticker Recommended List</button></td>         
+        </tr>
+    </table>
+    @Html.Partial("TimeTickerRecommendedTest")
+    @Html.Partial("TimeTickerRecommendedTest")
+    @Html.Partial("TimeTickerRecommendedTest")
+    @Html.Partial("TimeTickerRecommendedTest")
+</div>
