@@ -22,11 +22,13 @@
     <title>Quorse</title>
     @RenderSection("Scripts", false)
 </head>
-<body class="container">
+<body>
     @RenderBody()
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
     <script src="~/Scripts/jquery.countdown.min.js"></script>
-    @*<script src="~/Scripts/script.js"></script>*@
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/script.js"></script>
     <script>
         function initCountDown() {
             $('[data-countdown]').each(function () {
@@ -38,5 +40,6 @@
         }
 
     </script>
+    @RenderSection("footerjs", false)
 </body>
 </html>

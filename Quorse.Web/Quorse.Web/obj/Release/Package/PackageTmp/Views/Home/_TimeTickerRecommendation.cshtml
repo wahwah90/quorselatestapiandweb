@@ -1,0 +1,135 @@
+﻿<section id="home-time-ticker">
+    <div id="home-time-ticker-title-view">
+        <div id="home-time-ticker-title">
+            <h2>TIME TICKER</h2>
+            <p>Grab Our Time Limited Offers Available At Discounted Prices</p>
+        </div>
+        <div id="home-time-ticker-view">
+            <a href='#'>View More</a>
+        </div>
+    </div>
+    <div class="share-row-list-course-5-only">
+        <ul data-bind="visible:model.preload">
+            <li>
+                <div class="share-row-list-course-5-only-each">
+                    <div class="share-row-list-course-5-only-each-image-wishlist animated-background">
+
+                    </div>
+                    <div class="share-row-list-course-5-only-each-information">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="share-row-list-course-5-only-each">
+                    <div class="share-row-list-course-5-only-each-image-wishlist animated-background">
+
+                    </div>
+                    <div class="share-row-list-course-5-only-each-information">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="share-row-list-course-5-only-each">
+                    <div class="share-row-list-course-5-only-each-image-wishlist animated-background">
+                    </div>
+                    <div class="share-row-list-course-5-only-each-information">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="share-row-list-course-5-only-each">
+                    <div class="share-row-list-course-5-only-each-image-wishlist animated-background">
+                    </div>
+                    <div class="share-row-list-course-5-only-each-information">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="share-row-list-course-5-only-each">
+                    <div class="share-row-list-course-5-only-each-image-wishlist animated-background">
+
+                    </div>
+                    <div class="share-row-list-course-5-only-each-information">
+
+                    </div>
+                </div>
+            </li>
+        </ul>    
+        <ul data-bind="foreach:{ data: model.timeTickerRecommendedViewModel(),afterRender:renderedHandler}">
+            <li>
+                <div class="share-row-list-course-5-only-each">
+                    <div class="share-row-list-course-5-only-each-image-wishlist">
+                        <div class="share-row-list-course-5-only-each-image">
+                            <img data-bind="attr:{src: $data.CourseImage}" alt="1">
+                        </div>
+                        <div class="share-row-list-course-5-only-each-wishlist row-list-course-each-wishlist">
+                            <img src="~/Content/Images/icon-wishlist.png" alt="Wishlist Icon">
+                        </div>
+                    </div>
+                    <div class="share-row-list-course-5-only-each-information">
+                        <div class="row-list-course-each-5-title-by">
+                            <div class="share-row-list-course-5-only-each-title" data-bind="text: $data.CourseTitle">                            
+                            </div>
+                            <div class="share-row-list-course-5-only-each-by"  data-bind="text: $data.CourseEntityName">
+                            </div>
+                        </div>
+                        <div class="share-row-list-course-5-only-each-price-rating-time">
+                            <div class="share-row-list-course-5-only-each-price-rating">
+                                <div class="share-row-list-course-5-only-each-price">
+                                    <div class="share-row-list-course-5-only-each-price-before">
+                                        RM <span data-bind="text: $data.normalPrice"></span>
+                                    </div>
+                                    <div class="share-row-list-course-5-only-each-price-after-percent">
+                                        <div class="share-row-list-course-5-only-each-price-after">
+                                            RM <span data-bind="text: $data.discountedPrice"></span>
+                                        </div>
+                                        <div class="share-row-list-course-5-only-each-price-percent">
+                                            <span data-bind="text: $data.discountedRate"></span> %
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="share-row-list-course-5-only-each-rating-infoicon">
+                                    <div class="share-row-list-course-5-only-each-rating">
+                                        <div class="share-row-list-course-5-only-each-rating-icon">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="share-row-list-course-5-only-each-rating-text" data-bind="text:$data.rating">
+                                        </div>
+                                    </div>
+                                    <div class="share-row-list-course-5-only-each-infoicon">
+                                        <ul>
+                                            <li>
+                                                <div class="share-row-list-course-5-only-each-infoicon-each" data-bind="visible:$data.CourseHasPublicClass">
+                                                    <img src="~/Content/Images/icon-time-ticker.png" data-toggle="tooltip" title="Public Class" alt="Time ticker icon.png">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="share-row-list-course-5-only-each-infoicon-each" data-bind="visible:$data.CourseHasLVCClass">
+                                                    <img src="~/Content/Images/icon-live-virtual-class.png" data-toggle="tooltip" title="Live Virtual Class" alt="Live virtual class icon.png">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="share-row-list-course-5-only-each-infoicon-each" data-bind="visible:$data.CourseHasELearningClass">
+                                                    <img src="~/Content/Images/icon-e-learning.png" data-toggle="tooltip" title="E Learning" alt="E-learning icon.png">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="share-row-list-course-5-only-each-infoicon-each">
+                                                    <img src="~/Content/Images/icon-private-class.png" data-toggle="tooltip" title="Private Class" alt="Private class icon.png">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="share-row-list-course-5-only-each-time">
+                                <span data-bind="attr:{'data-countdown': $data.ttEndDate}"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</section>

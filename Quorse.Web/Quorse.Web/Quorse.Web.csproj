@@ -231,6 +231,27 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\home\computer\banner1.jpg" />
+    <Content Include="Content\Images\home\computer\banner2.jpg" />
+    <Content Include="Content\Images\home\computer\banner3.jpg" />
+    <Content Include="Content\Images\home\description\icon-14-categories.png" />
+    <Content Include="Content\Images\home\description\icon-q-point.png" />
+    <Content Include="Content\Images\home\description\icon-time-ticker.png" />
+    <Content Include="Content\Images\home\description\icon-training-experience.png" />
+    <Content Include="Content\Images\home\featurepartner\featured-partner-background.jpg" />
+    <Content Include="Content\Images\home\featurepartner\logo-global-knowledge.png" />
+    <Content Include="Content\Images\home\featurepartner\logo-hp-education.png" />
+    <Content Include="Content\Images\home\featurepartner\logo-info-trek.png" />
+    <Content Include="Content\Images\home\featurepartner\logo-itrain.png" />
+    <Content Include="Content\Images\home\featurepartner\logo-quint.png" />
+    <Content Include="Content\Images\home\featurepartner\logo-simplilearn.png" />
+    <Content Include="Content\Images\home\featurepartner\logo-training-asia.com.png" />
+    <Content Include="Content\Images\home\phone\banner1.jpg" />
+    <Content Include="Content\Images\home\phone\banner2.jpg" />
+    <Content Include="Content\Images\home\phone\banner3.jpg" />
+    <Content Include="Content\Images\home\tablet\banner1.jpg" />
+    <Content Include="Content\Images\home\tablet\banner2.jpg" />
+    <Content Include="Content\Images\home\tablet\banner3.jpg" />
     <Content Include="Content\Images\icon-e-learning.png" />
     <Content Include="Content\Images\icon-live-virtual-class.png" />
     <Content Include="Content\Images\icon-private-class.png" />
@@ -257,6 +278,7 @@
     <None Include="Properties\PublishProfiles\quorseapiapp - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\extendFunction.js" />
+    <Content Include="Scripts\Home\CarourselLoader.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
@@ -332,13 +354,10 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Test.cshtml" />
-    <Content Include="Views\Home\IndexTest.cshtml" />
-    <Content Include="Views\Home\TimeTickerRecommendedTest.cshtml" />
-    <Content Include="Views\Home\TimeTickerRecommended.cshtml" />
-    <Content Include="Views\Home\PopularRecommended.cshtml" />
-    <Content Include="Views\Home\Preloader.cshtml" />
-    <Content Include="Views\Home\LatestRecommended.cshtml" />
-    <Content Include="Views\Home\SuggestionRecommended.cshtml" />
+    <Content Include="Views\Home\_TimeTickerRecommendation.cshtml" />
+    <Content Include="Views\Home\_LatestRecommendation.cshtml" />
+    <Content Include="Views\Home\_PopularRecommendation.cshtml" />
+    <Content Include="Views\Home\_SuggestionRecommendation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

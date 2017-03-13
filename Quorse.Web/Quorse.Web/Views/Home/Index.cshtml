@@ -4,10 +4,161 @@
     getLatestRecommendedList();
     getSuggestionRecommendedList();
 </script>
-
+<section id='home-banner'>
+    <div id="home-banner-computer" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+            <li data-target="#home-banner-computer" data-slide-to="0" class="active"></li>
+            <li data-target="#home-banner-computer" data-slide-to="1"></li>
+            <li data-target="#home-banner-computer" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="~/Content/Images/home/computer/banner1.jpg" draggable="false" onmousedown="return false">
+            </div>
+            <div class="item">
+                <img src="~/Content/Images/home/computer/banner2.jpg" draggable="false" onmousedown="return false">
+            </div>
+            <div class="item">
+                <img src="~/Content/Images/home/computer/banner3.jpg" draggable="false" onmousedown="return false">
+            </div>
+        </div>
+    </div>
+    <div id="home-banner-tablet" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+            <li data-target="#home-banner-tablet" data-slide-to="0" class="active"></li>
+            <li data-target="#home-banner-tablet" data-slide-to="1"></li>
+            <li data-target="#home-banner-tablet" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="~/Content/Images/home/tablet/banner1.jpg">
+            </div>
+            <div class="item">
+                <img src="~/Content/Images/home/tablet/banner2.jpg">
+            </div>
+            <div class="item">
+                <img src="~/Content/Images/home/tablet/banner3.jpg">
+            </div>
+        </div>
+    </div>
+    <div id="home-banner-phone" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+            <li data-target="#home-banner-phone" data-slide-to="0" class="active"></li>
+            <li data-target="#home-banner-phone" data-slide-to="1"></li>
+            <li data-target="#home-banner-phone" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="~/Content/Images/home/phone/banner1.jpg">
+            </div>
+            <div class="item">
+                <img src="~/Content/Images/home/phone/banner2.jpg">
+            </div>
+            <div class="item">
+                <img src="~/Content/Images/home/phone/banner3.jpg">
+            </div>
+        </div>
+    </div>
+</section>
 <div class="wrapper-width-1100-px-home-list-course-5">
-   @Html.Partial("TimeTickerRecommended")
-   @Html.Partial("PopularRecommended")
-   @Html.Partial("LatestRecommended")
-   @Html.Partial("SuggestionRecommended")
+   @Html.Partial("_TimeTickerRecommendation")
+   @Html.Partial("_PopularRecommendation")
+   @Html.Partial("_LatestRecommendation")
+   @Html.Partial("_SuggestionRecommendation")
 </div>
+<section id="home-why">
+    <div class="wrapper-width-1100-px">
+        <div id="home-why-choose-quorse">
+            <h1>Why Choose Quors&eacute;? </h1>
+            <p>
+                Quors&eacute; is Asia's first online training marketplace that connects individuals and business with experienced trainers and training providers. Quors&eacute;
+                was conceptualized to bridge the gaps between the tedious search for high quality training courses and the learning needs of personal users, talent
+                managers and corporate training. Browse from any device 24/7 and discover thousands of courses, available at competitive prices.
+            </p>
+        </div>
+        <div id='home-why-quote'>
+            <div class="home-why-choose-quorse-quote-divider"></div>
+            <blockquote>
+                "Our core values are making learning accessible and affordable to all and to <br />
+                offer a diverse range of courses that suit every personal need"
+            </blockquote>
+            <div class="home-why-choose-quorse-quote-divider"></div>
+        </div>
+        <div id='home-why-boxicon'>
+            <ul>
+                <li class="home-why-boxicon-box">
+                    <div id="home-why-boxicon-image">
+                        <img src="~/Content/Images/home/description/icon-14-categories.png">
+                    </div>
+                    <div id="home-why-boxicon-text">
+                        14 categories, 5571 courses, 759 trainers and counting
+                    </div>
+                </li>
+                <li class="home-why-boxicon-box-divider"></li>
+                <li class="home-why-boxicon-box">
+                    <div id="home-why-boxicon-image">
+                        <img src="~/Content/Images/home/description/icon-training-experience.png">
+                    </div>
+                    <div id="home-why-boxicon-text">
+                        A Value-Added Training Experience with highly-skilled trainers
+                    </div>
+                </li>
+                <li class="home-why-boxicon-box-divider"></li>
+                <li class="home-why-boxicon-box">
+                    <div id="home-why-boxicon-image">
+                        <img src="~/Content/Images/home/description/icon-time-ticker.png">
+                    </div>
+                    <div id="home-why-boxicon-text">
+                        Unlimited TimeTicker Discount On Offer
+                    </div>
+                </li>
+                <li class="home-why-boxicon-box-divider"></li>
+                <li class="home-why-boxicon-box">
+                    <div id="home-why-boxicon-image">
+                        <img src="~/Content/Images/home/description/icon-q-point.png">
+                    </div>
+                    <div id="home-why-boxicon-text">
+                        Learn Earn & Get Rewarded with Q Points
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="home-featured-partner">
+    <div class="wrapper-width-1100-px">
+        <div id="home-featured-partner-title-logo">
+            <div id="home-featured-partner-title">
+                Featured Partners
+            </div>
+            <div id="home-featured-partner-logo">
+                <ul>
+                    <li>
+                        <img src="~/Content/Images/home/featurepartner/logo-training-asia.com.png" alt="Training Asia.Com Logo">
+                    </li>
+                    <li>
+                        <img src="~/Content/Images/home/featurepartner/logo-info-trek.png" alt="Info Trek Logo">
+                    </li>
+                    <li>
+                        <img src="~/Content/Images/home/featurepartner/logo-itrain.png" alt="ITrain Logo">
+                    </li>
+                    <li>
+                        <img src="~/Content/Images/home/featurepartner/logo-simplilearn.png" alt="Simplilearn Logo">
+                    </li>
+                    <li>
+                        <img src="~/Content/Images/home/featurepartner/logo-quint.png" alt="quit.png">
+                    </li>
+                    <li>
+                        <img src="~/Content/Images/home/featurepartner/logo-hp-education.png">
+                    </li>
+                    <li>
+                        <img src="~/Content/Images/home/featurepartner/logo-global-knowledge.png">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+@section footerjs{
+    <script src="~/Scripts/Home/CarourselLoader.js"></script>
+}

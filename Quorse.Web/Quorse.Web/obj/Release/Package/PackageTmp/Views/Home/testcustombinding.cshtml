@@ -1,0 +1,31 @@
+﻿<section id="home-time-ticker">
+    <div id="home-time-ticker-title-view">
+        <div id="home-time-ticker-title">
+            <h2>TIME TICKER</h2>
+            <p>Grab Our Time Limited Offers Available At Discounted Prices</p>
+        </div>
+        <div id="home-time-ticker-view">
+            <a href='#'>View More</a>
+        </div>
+    </div>
+    <div class="row-list-course-5">
+       
+        <ul data-bind="lazyLoading:model.timeTickerRecommendedViewModel(),foreach{data: model.timeTickerRecommendedViewModel()}">
+            <li>
+                <div class="row-list-course-5-each">
+                    <div class="row-list-course-5-each-image-wishlist">
+                        <div class="row-list-course-5-each-image">
+                            <img data-bind="attr:{src: $data.CourseImage}" alt="1">
+                        </div>
+                        <div class="row-list-course-5-each-wishlist row-list-course-each-wishlist">
+                            <img src="~/Content/Images/icon-wishlist.png" alt="Wishlist Icon">
+                        </div>
+                    </div>
+                    <div class="row-list-course-5-each-information">
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
